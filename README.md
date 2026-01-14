@@ -11,22 +11,22 @@ cool tool
 
 ### Linux / macOS
 ```bash
-git clone https://github.com/yourusername/perf-tester.git && cd perf-tester && pip3 install aiohttp && python3 l7net.py
+git clone https://github.com/lemonaiddhater/l7net && cd l7net && pip3 install aiohttp && python3 l7net.py
 ```
 
 ### Termux
 ```bash
-pkg install python git && git clone https://github.com/yourusername/perf-tester.git && cd perf-tester && pip install aiohttp && python l7net.py
+pkg install python git && git clone https://github.com/lemonaiddhater/l7net && cd l7net && pip install aiohttp && python l7net.py
 ```
 
 ### iSH Shell
 ```bash
-apk add python3 py3-pip git && git clone https://github.com/yourusername/perf-tester.git && cd perf-tester && pip3 install aiohttp && python3 l7net.py
+apk add python3 py3-pip git && git clone https://github.com/lemonaiddhater/l7net && cd l7net && pip3 install aiohttp && python3 l7net.py
 ```
 
 ### Windows
 ```powershell
-git clone https://github.com/yourusername/perf-tester.git; cd perf-tester; pip install aiohttp; python l7net.py
+git clone https://github.com/lemonaiddhater/l7net; cd l7net; pip install aiohttp; python l7net.py
 ```
 
 ## Requirements
@@ -43,7 +43,7 @@ git clone https://github.com/yourusername/perf-tester.git; cd perf-tester; pip i
 | HTTP POST | HTTP POST with JSON data | Hard+ |
 | HTTPS POST | Secure POST requests | Hard+ |
 | RAPID FIRE | Fast requests, minimal delay | Hard+ |
-| STRESS TEST | 2 requests per cycle | Hard+ |
+| STRESS TEST | Heavy requests per cycle | All+ |
 | CURL | cURL-style requests | Pro+ |
 | GET/POST MIX | Random GET/POST alternation | Pro+ |
 | BURST MODE | 3 rapid requests per cycle | Pro+ |
@@ -57,10 +57,10 @@ git clone https://github.com/yourusername/perf-tester.git; cd perf-tester; pip i
 
 | Plan | Workers | Duration |
 |------|---------|----------|
-| FREE | 50 | 10s |
-| HARD | 250 | 20s |
-| PRO | 1000 | 45s |
-| VIP | 5000 | 90s |
+| FREE | 100 | 120s |
+| HARD | 250 | 300s |
+| PRO | 1000 | 3600s |
+| VIP | 12000 | 9500s |
 
 ## Metrics
 
