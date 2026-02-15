@@ -11,22 +11,43 @@ cool tool
 
 ### Linux / macOS
 ```bash
-git clone https://github.com/lemonaiddhater/l7net && cd l7net && pip3 install aiohttp && python3 l7net.py
+git clone https://github.com/lemonaiddhater/l7net
+pip install aiohttp
+pip install requests
+cd l7net 
+python3 l7net.py
 ```
 
 ### Termux
 ```bash
-pkg install python git && git clone https://github.com/lemonaiddhater/l7net && cd l7net && pip install aiohttp && python l7net.py
+pkg install python git
+pip install requests
+pip install aiohttp
+git clone https://github.com/lemonaiddhater/l7net
+cd l7net 
+python3 l7net.py
 ```
 
 ### iSH Shell
 ```bash
-apk add python3 py3-pip git && git clone https://github.com/lemonaiddhater/l7net && cd l7net && pip3 install aiohttp && python3 l7net.py
+apk add python3 py3-pip git
+pip install requests
+pip install aiohttp
+git clone https://github.com/lemonaiddhater/l7net
+cd l7net 
+python3 l7net.py 
 ```
 
 ### Windows
 ```powershell
-git clone https://github.com/lemonaiddhater/l7net; cd l7net; pip install aiohttp; python l7net.py
+winget install -e --id Python.Python.3; winget install -e --id Git.Git
+python --version
+git --version
+pip install requests
+pip install aiohttp
+git clone https://github.com/lemonaiddhater/l7net
+cd l7net 
+python3 l7net.py
 ```
 
 ## Requirements
