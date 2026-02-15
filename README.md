@@ -42,16 +42,17 @@ git clone https://github.com/lemonaiddhater/l7net; cd l7net; pip install aiohttp
 | HTTPS GET | Secure HTTPS GET requests | All |
 | HTTP POST | HTTP POST with JSON data | Hard+ |
 | HTTPS POST | Secure POST requests | Hard+ |
-| RAPID FIRE | Fast requests, minimal delay | Hard+ |
+| HULK | Fast requests, minimal delay | Hard+ |
 | STRESS TEST | Heavy requests per cycle | All+ |
 | CURL | cURL-style requests | Pro+ |
-| GET/POST MIX | Random GET/POST alternation | Pro+ |
-| BURST MODE | 3 rapid requests per cycle | Pro+ |
-| CONCURRENT FLOOD | 2 mixed requests per cycle | Pro+ |
-| CUSTOM HEADERS | Custom header injection | VIP |
-| BULK REQUEST | Batch request processing | VIP |
-| SOCKET PRESSURE | 4 requests per cycle | VIP |
-| AMPLIFIED LOAD | 5 requests per cycle (MAX) | VIP |
+| GET/POST MIX | Random GET/POST alternation | All |
+| DNS-AMP | dns rapid requests amplifed| Hard+ |
+| CONCURRENT HOLD | concurrent spam | Pro+ |
+| BROWSER | Custom browser injection | VIP |
+| NODE-NUKE | Batch request processing | VIP |
+| SOCKET-AMP | heavy payload requestscycle | VIP |
+| TLS-VIP | protected layer requests | VIP |
+| NET-BYPASS | hexxed payload requests (MAX) | VIP |
 
 ## Plans
 
