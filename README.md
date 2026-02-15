@@ -2,9 +2,9 @@
 cool tool
 - Customizable color schemes
 - Real-time performance metrics
-- 14 test methods
-- Rotating user agents
-- 4 performance tiers
+- 14+  stress-test methods
+- 500+ Powerful user-agent bots
+- 100+ Socks5 Proxies 
 <img width="392" height="479" alt="Screenshot 2026-01-13 5 10 14 PM" src="https://github.com/user-attachments/assets/98a1d61e-2c49-4dd3-93ac-c4b1cf1f9bad" />
 
 ## Install
